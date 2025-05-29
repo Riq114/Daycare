@@ -97,3 +97,13 @@ document.addEventListener("DOMContentLoaded", function () {
     lightbox.style.display = "none";
   });
 });
+
+/* floating text */
+document.addEventListener("DOMContentLoaded", function() {
+    const floatingText = document.getElementById("floating-text");
+    
+    // Change color randomly
+    setInterval(() => {
+        floatingText.style.color = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
+    }, 1000);
+});

@@ -21,6 +21,8 @@
 }
 section {
   padding: 50px 10%;
+  backdrop-filter: blur(30px); ;
+  background-color:rgba(255, 255, 255, 0.3);
 }
 body {
   color: var(--text-color);
@@ -68,7 +70,6 @@ header {
     position: relative;
     margin-left: 30px;
     gap: 45px;
-    background-color: #dddddd;
     padding: 20px;
     border-radius: 20px;
 }
@@ -76,6 +77,7 @@ header {
 .navbar li {
   position: relative;
   margin-left: 30px;
+  
 }
 
 .navbar a {
@@ -83,6 +85,7 @@ header {
   font-weight: 600;
   font-size: 1.1rem;
   transition: var(--transition);
+  
 }
 
 #menu-icon {
@@ -130,14 +133,14 @@ header {
   padding: 10px;
   width: 400px;
   border-radius: 1rem;
-  background: #fff;
   margin-top:40px;
 }
 
 .home-text h1 {
   color:black;
   font-size: 3rem;
-  padding-top: 10px;
+  padding-top: 100px;
+  
 }
 .home-text span {
   color: var(--main-color);
@@ -179,7 +182,6 @@ header {
   border-radius: 0.5rem;
   outline: none;
   margin-bottom: 2rem;
-  border: 2px solid var(--main-color);
   box-shadow: 0 4px 4px 2px rgb(14 55 54 / 15%);
 }
 
@@ -194,15 +196,20 @@ header {
   padding: 2px;
   border-radius: 0.5rem;
   outline: none;
+  margin-top: 3rem;
   margin-bottom: 2rem;
   /*border: 2px solid var(--main-color)*/;
   box-shadow: 0 4px 4px 2px rgb(14 55 54 / 15%);
 }
+
+/*styling the values-container*/
+
 .values-container {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, auto));
   gap: 1.5rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
+  background-color: #ffffff;
 }
 
 .values-card{
@@ -212,13 +219,86 @@ header {
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
   padding: 10px;
-  box-shadow: 0 1px 04px 0.5px rgb(0, 0, 0);
+  box-shadow: 0 0.5px 02px 0.5px rgba(255, 0, 0, 0.5);
+  margin-top: 2rem;
 }
 
 .values-card h2{
     color: #0096ff ;
 }
 
+
+/*styling the small-container*/
+
+.small-container {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  background-color: #ffffff;
+  text-align: center;
+  
+}
+
+.small-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  box-shadow: 0 1px 02px 0.5px rgba(17, 17, 17, 0.5);
+  margin-top: 2rem;
+  color: #000000;
+}
+
+.small-card h2{
+ color: #f16a61 ;
+ font-weight: 300;
+ font-size:medium;
+}
+
+/*styling home images*/
+
+
+.img-container {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  background-color: #ffffff;
+}
+
+.img-card img{
+  width: 100%;
+  height:auto;
+
+}
+
+.img-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  box-shadow: 0 0.5px 02px 0.5px rgba(255, 0, 0, 0.5);
+  margin-top: 2rem;
+}
+
+.values-card h2{
+    color: #0096ff ;
+}
+
+
+.img-card p{
+  bottom: 10px;
+  left: 50%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
 
 
 
@@ -479,3 +559,4 @@ form textarea {
     height: 32px;
   }
 }
+
