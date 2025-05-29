@@ -68,6 +68,9 @@ header {
     position: relative;
     margin-left: 30px;
     gap: 45px;
+    background-color: #dddddd;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .navbar li {
@@ -130,10 +133,11 @@ header {
   background: #fff;
   margin-top:40px;
 }
+
 .home-text h1 {
   color:black;
   font-size: 3rem;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 .home-text span {
   color: var(--main-color);
@@ -160,10 +164,10 @@ header {
   background: #87ceeb;
 }
 .home-img{
-    padding-top: 100px;
+    padding-top: 10px;
 }
 
-.home-img img{
+.home-img img {
   width:100%;
   height: auto;
   padding-right: 50px;
@@ -176,6 +180,22 @@ header {
   outline: none;
   margin-bottom: 2rem;
   border: 2px solid var(--main-color);
+  box-shadow: 0 4px 4px 2px rgb(14 55 54 / 15%);
+}
+
+.home-img2 img {
+  width:100%;
+  height: auto;
+  padding-right: 50px;
+  margin-right: 50px;
+  display:flex;
+  border-radius: 10px;
+  margin: 0.1rem 0 1rem;
+  padding: 2px;
+  border-radius: 0.5rem;
+  outline: none;
+  margin-bottom: 2rem;
+  /*border: 2px solid var(--main-color)*/;
   box-shadow: 0 4px 4px 2px rgb(14 55 54 / 15%);
 }
 .values-container {
