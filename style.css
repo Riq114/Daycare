@@ -314,7 +314,18 @@ header {
   border-radius: 20px;
 }
 .blog-heading {
-  padding-top: 100px;
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--main-color);
+  display:flex;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
 }
 
 .blog-container {
@@ -325,7 +336,7 @@ header {
   align-items: center;
 }
 
-.blog-heading p {
+/*.blog-heading p {
   font-size: 3rem;
   font-weight: 500;
   color:rgb(0, 0, 0);
@@ -333,7 +344,7 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 10px;
-}
+}*/
 
 /*styling the blog-container*/
 
@@ -404,7 +415,9 @@ header {
   border-radius: 15px;
   padding: 10px;
   margin: 10px;
+  justify-content: center;
   align-items: center;
+  margin-top: 5rem;
 
 }
 
@@ -413,13 +426,12 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-  margin-top: 7rem;
+  margin-top:1rem;
 }
 .contact-container h2{
- font-size: 3.7rem;
+ font-size: 2.5rem;
   color:white;
   background-color: #000000;
-  padding: 10px;
   border-radius: 20px;
   display: flex;
   justify-content: center; 
