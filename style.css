@@ -181,7 +181,7 @@ header {
   padding: 2px;
   border-radius: 0.5rem;
   outline: none;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   box-shadow: 0 4px 4px 2px rgb(14 55 54 / 15%);
 }
 
@@ -223,7 +223,7 @@ header {
   margin-top: 2rem;
 }
 
-.values-card h2{
+.blog-card h2{
     color: #0096ff ;
 }
 
@@ -282,6 +282,7 @@ header {
   background-color: rgb(0, 0, 0);
 
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .values-card h2{
@@ -302,6 +303,91 @@ header {
   font-size:1.1rem
 }
 
+
+/*styling blog*/
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+.blog-heading {
+  padding-top: 100px;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 1.5rem;
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.blog-heading p {
+  font-size: 3rem;
+  font-weight: 500;
+  color:rgb(0, 0, 0);
+  display: inline;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/*styling the blog-container*/
+
+.blog-container {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.blog-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 0.5px 3px 0.5px rgba(0, 0, 0, 0.5);
+  margin-top: 1.5rem;
+}
+
+.blog-card h2{
+    color: #000000 ;
+    font-weight:400;
+}
+
+/*styling school activities blog*/
+
+.school-activities{
+  margin-bottom: 0;
+}
+.school-activities h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--main-color);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  align-content: center;
+  margin-top: 80px;
+}
+
+.school-activities h3{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 2rem;
+
+}
+
+.school-activities span{
+  color: var(--main-color);
+  
+}
 
 
 
@@ -329,6 +415,16 @@ header {
   gap: 1rem;
   margin-top: 7rem;
 }
+.contact-container h2{
+ font-size: 3.7rem;
+  color:white;
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 1rem;
+}
 
 .p-contact{
     padding-top: 25px;
@@ -343,10 +439,15 @@ header {
   display: flex;
   justify-content: center;
 }
-.contact-info h2 {
+/*.contact-info h2 {
   font-size: 3.7rem;
   color: var(--main-color);
-}
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}*/
 .address {
   display: flex;
   flex-direction: column;
