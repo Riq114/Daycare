@@ -400,6 +400,74 @@ header {
   
 }
 
+/*styling about us*/
+.about {
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background: #fff;
+  gap: 1.5rem;
+}
+
+.about-us-heading {
+  text-align: center;
+}
+.about-us-heading h3 {
+  max-width: 88%;
+  margin: 3rem 0 1.1rem;
+  font-weight: 400;
+}
+.new{
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--main-color);
+  display: inline;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 50px; 
+}
+.about-us-heading h2 {
+  font-weight: normal;
+}
+.about-us-about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+.about-us-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+.about-us-box img {
+  width: 100%;
+  height: 40%;
+}
+.about-us-box img {
+  border-radius: 10px;
+  margin: 0.1rem 0 1rem;
+  padding: 2px;
+  border-radius: 0.5rem;
+  outline: none;
+  margin-bottom: 1rem;
+  border: 2px solid var(--main-color);
+  box-shadow: 0 4px 4px 2px rgb(14 55 54 / 15%);
+}
+.about-us-box h2 {
+  font-size: 1.5rem;
+  color: #0096ff;
+  margin: 3rem 0 1.1rem;
+  display: block;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2),
+    0px -5px 15px rgba(0, 0, 0, 0.1) inset;
+}
 
 
 
@@ -674,4 +742,11 @@ form textarea {
     height: 32px;
   }
 }
+
+/* Make header sticky on scroll */
+header.sticky {
+  padding: 12px 12%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
 

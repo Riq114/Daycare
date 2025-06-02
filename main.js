@@ -58,9 +58,9 @@ document.addEventListener("DOMContentLoaded", function () {
       image.style.transform = "scale(1)";
     });
   });
-}); 
+}); */
 
-*/
+
 
 /*increasing the size to full screen */
 document.addEventListener("DOMContentLoaded", function () {
