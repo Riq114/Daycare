@@ -744,9 +744,43 @@ form textarea {
 }
 
 /* Make header sticky on scroll */
+
+
 header.sticky {
   padding: 12px 12%;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+ @keyframes appear {
+        from {
+          opacity: 0;
+          clip-path: inset(100% 100% 0 0);
+        }
+        to {
+          opacity: 1;
+          clip-path: inset(0 0 0 0);
+        }
+      }
 
+      .values-container,.home-img,.values-card,.home-img2,.small-container,
+      .img-container {
+        animation: appear 2s ease-out;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      } 
+
+      @keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.home-text {
+  animation: bounce 2s ease infinite;
+}
